@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body h1 h2 {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+      background: -webkit-linear-gradient(left, grey, white); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(left, grey, white); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(left, grey, white); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to left,grey , white); /* Standard syntax */
+
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 30px !important;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+  <img src="images/logo2.png" height="126px" width="66px" side ="left">
+  </a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>   
+    <a href="graphic.html">Graphic Design</a> 
+    <a href="illustration.html">Illustration</a>
+    <a href="contact.html">Contact</a>  		
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+<img src="images/logo2.png" height="126px" width="66px">
+
+</span>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<center><h1> Services</h1></center>
+
+<hr>
+<center><h3>
+While a lot of the work seen on this site is illustration based, I'm able to create complex works in different fields. those include:</h3>
+<ul style="list-style-type:none"> 
+<li> Branding </li>
+<li> Animation/Motion</li>
+<li> Typography Design</li>
+<li> Pre Press </li>
+<li> Photography</li>
+</ul>
+
+
+
+</center>
+
+
+     
+</body>
+</html> 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body h1, h2{
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+      background: -webkit-linear-gradient(left, grey, white); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(left, grey, white); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(left, grey, white); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to left, grey , white); /* Standard syntax */
+
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 30px !important;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+  <img src="images/logo2.png" height="126px" width="66px" side ="left">
+  </a>
+    <a href="about.html">About</a>  
+    <a href="services.html">Services</a>
+    <a href="graphic.html">Graphic Design</a> 
+    <a href="illustration.html">Illustration</a>
+    <a href="contact.html">Contact</a>  		
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+<img src="images/logo2.png" height="126px" width="66px">
+
+</span>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<marquee behavior="slide-in" direction="right" scrolldelay="60" onmouseover="this.stop();" onmouseout="this.start()"; >
+<a href="-">
+<img src="images/artwork/A2Portait.jpg" height="280px" width="190px" ></marquee>
+</a>
+
+<marquee behavior="slide-in" direction="right" scrolldelay="300"
+onmouseover="this.stop();" onmouseout="this.start()";>
+<a href="-">
+<img src= "images/artwork/alcohol.png" height="265px" width="170px"
+onmouseover="this.stop();" onmouseout="this.start()";></marquee>
+
+<marquee behavior="slide-in" direction="right" scrolldelay="200"onmouseover="this.stop();" onmouseout="this.start()";>
+<a href="-">
+<img src="images/artwork/adam trethowan love and information 2.pdf" height="280px" width="190px"></marquee>
+
+<marquee behavior="slide-in" direction="right" scrolldelay="70"onmouseover="this.stop();" onmouseout="this.start()";>
+<a href="-">
+<img src="images/artwork/skull-rose.jpg" height="170px" width="265px"></marquee>
+
+<marquee behavior="slide-in" direction="right" scrolldelay="140"onmouseover="this.stop();" onmouseout="this.start()";>
+<a href="-">
+<img src="images/artwork/charcoal.jpg" height="265px" width="170px"></marquee>
+
+
+
+
+
+
+
+     
+</body>
+</html> 
